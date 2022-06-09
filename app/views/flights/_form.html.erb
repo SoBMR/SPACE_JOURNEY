@@ -1,0 +1,9 @@
+<%= simple_form_for(flight) do |f| %>
+  <%= f.input :departure_date %>
+  <%= f.input :price_per_person, :label => "Price" %>
+  <%= f.input :travel_distance %>
+  <%= f.input :departure_planet %>
+  <%= f.input :arrival_planet %>
+  <%= f.input :techno %>
+  <%= f.submit "Save your flight", class: "btn btn-primary" %>
+<% end %>
