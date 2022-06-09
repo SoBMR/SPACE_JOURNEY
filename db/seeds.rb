@@ -15,9 +15,9 @@ planet1 = Planet.new(
   description: "Praesent aliquam, enim at fermentum mollis, ligula massa adipiscing nisl, ac euismod nibh nisl eu lectus. Fusce vulputate sem at sapien. Vivamus leo."
 )
 
-# img_url = "borg_planet.png"
-# file = URI.open(img_url)
-# planet.photo.attach(io: file, filename: "#{planet.name}.jpg", content_type: 'image/jpg')
+img_file = "app/assets/images/borg_planet.png"
+file = File.open(img_file)
+planet1.photo.attach(io: file, filename: "#{planet1.name}.jpg", content_type: 'image/jpg')
 
 planet1.save!
 
@@ -27,9 +27,9 @@ planet2 = Planet.new(
   description: "Praesent aliquam, enim at fermentum mollis, ligula massa adipiscing nisl, ac euismod nibh nisl eu lectus. Fusce vulputate sem at sapien. Vivamus leo."
 )
 
-# img_url = "borg_planet.png"
-# file = URI.open(img_url)
-# planet.photo.attach(io: file, filename: "#{planet.name}.jpg", content_type: 'image/jpg')
+img_file = "app/assets/images/borg_planet.png"
+file = File.open(img_file)
+planet2.photo.attach(io: file, filename: "#{planet2.name}.jpg", content_type: 'image/jpg')
 
 planet2.save!
 
@@ -39,9 +39,9 @@ planet3 = Planet.new(
   description: "Praesent aliquam, enim at fermentum mollis, ligula massa adipiscing nisl, ac euismod nibh nisl eu lectus. Fusce vulputate sem at sapien. Vivamus leo."
 )
 
-# img_url = "borg_planet.png"
-# file = URI.open(img_url)
-# planet.photo.attach(io: file, filename: "#{planet.name}.jpg", content_type: 'image/jpg')
+img_file = "app/assets/images/borg_planet.png"
+file = File.open(img_file)
+planet3.photo.attach(io: file, filename: "#{planet3.name}.jpg", content_type: 'image/jpg')
 
 planet3.save!
 
@@ -51,33 +51,33 @@ planetCPU1 = Planet.new(
   description: "Praesent aliquam, enim at fermentum mollis, ligula massa adipiscing nisl, ac euismod nibh nisl eu lectus. Fusce vulputate sem at sapien. Vivamus leo."
 )
 
-# img_url = "borg_planet.png"
-# file = URI.open(img_url)
-# planet.photo.attach(io: file, filename: "#{planet.name}.jpg", content_type: 'image/jpg')
+img_file = "app/assets/images/CPU_Terra.jpg"
+file = File.open(img_file)
+planetCPU1.photo.attach(io: file, filename: "#{planetCPU1.name}.jpg", content_type: 'image/jpg')
 
 planetCPU1.save!
 
-#P2
+#P2 - CPU
 planetCPU2 = Planet.new(
   name: "Luna",
   description: "Praesent aliquam, enim at fermentum mollis, ligula massa adipiscing nisl, ac euismod nibh nisl eu lectus. Fusce vulputate sem at sapien. Vivamus leo."
 )
 
-# img_url = "borg_planet.png"
-# file = URI.open(img_url)
-# planet.photo.attach(io: file, filename: "#{planet.name}.jpg", content_type: 'image/jpg')
+img_file = "app/assets/images/CPU_Luna.png"
+file = File.open(img_file)
+planetCPU2.photo.attach(io: file, filename: "#{planetCPU2.name}.jpg", content_type: 'image/jpg')
 
 planetCPU2.save!
 
-#P3
+#P3 - CPU
 planetCPU3 = Planet.new(
   name: "Mars",
   description: "Praesent aliquam, enim at fermentum mollis, ligula massa adipiscing nisl, ac euismod nibh nisl eu lectus. Fusce vulputate sem at sapien. Vivamus leo."
 )
 
-# img_url = "borg_planet.png"
-# file = URI.open(img_url)
-# planet.photo.attach(io: file, filename: "#{planet.name}.jpg", content_type: 'image/jpg')
+img_file = "app/assets/images/CPU_Mars.jpg"
+file = File.open(img_file)
+planetCPU3.photo.attach(io: file, filename: "#{planetCPU3.name}.jpg", content_type: 'image/jpg')
 
 planetCPU3.save!
 
@@ -85,16 +85,16 @@ planetCPU3.save!
 ##### TECHS #####
 
 # T1
-tech = Techno.new(
+tech1 = Techno.new(
   name: "Locutus",
   description: "Praesent aliquam, enim at fermentum mollis, ligula massa adipiscing nisl, ac euismod nibh nisl eu lectus. Fusce vulputate sem at sapien. Vivamus leo."
 )
 
-# img_url = "borg_cube.jpg"
-# file = URI.open(img_url)
-# tech.photo.attach(io: file, filename: "#{tech.name}.jpg", content_type: 'image/jpg')
+img_file = "app/assets/images/borg_tech.png"
+file = File.open(img_file)
+tech1.photo.attach(io: file, filename: "#{tech1.name}.jpg", content_type: 'image/jpg')
 
-tech.save!
+tech1.save!
 
 # T2
 tech2 = Techno.new(
@@ -102,9 +102,9 @@ tech2 = Techno.new(
   description: "Praesent aliquam, enim at fermentum mollis, ligula massa adipiscing nisl, ac euismod nibh nisl eu lectus. Fusce vulputate sem at sapien. Vivamus leo."
 )
 
-# img_url = "borg_cube.jpg"
-# file = URI.open(img_url)
-# tech.photo.attach(io: file, filename: "#{tech.name}.jpg", content_type: 'image/jpg')
+img_file = "app/assets/images/borg_tech.png"
+file = File.open(img_file)
+tech2.photo.attach(io: file, filename: "#{tech2.name}.jpg", content_type: 'image/jpg')
 
 tech2.save!
 
@@ -114,9 +114,9 @@ tech3 = Techno.new(
   description: "Praesent aliquam, enim at fermentum mollis, ligula massa adipiscing nisl, ac euismod nibh nisl eu lectus. Fusce vulputate sem at sapien. Vivamus leo."
 )
 
-# img_url = "borg_cube.jpg"
-# file = URI.open(img_url)
-# tech.photo.attach(io: file, filename: "#{tech.name}.jpg", content_type: 'image/jpg')
+img_file = "app/assets/images/borg_tech.png"
+file = File.open(img_file)
+tech3.photo.attach(io: file, filename: "#{tech3.name}.jpg", content_type: 'image/jpg')
 
 tech3.save!
 
@@ -133,9 +133,9 @@ flight1 = Flight.new(
   techno: tech3
 )
 
-# img_url = # img address
-# file = URI.open(img_url)
-# flight.photo.attach(io: file, filename: "#{flight.name}.jpg", content_type: 'image/jpg')
+img_file = "app/assets/images/borg_cube.jpg"
+file = File.open(img_file)
+flight1.photo.attach(io: file, filename: "#{flight1.name}.jpg", content_type: 'image/jpg')
 
 flight1.save!
 
@@ -149,9 +149,9 @@ flight2 = Flight.new(
   techno: tech1
 )
 
-# img_url = # img address
-# file = URI.open(img_url)
-# flight.photo.attach(io: file, filename: "#{flight.name}.jpg", content_type: 'image/jpg')
+img_file = "app/assets/images/borg_cube.jpg"
+file = File.open(img_file)
+flight2.photo.attach(io: file, filename: "#{flight2.name}.jpg", content_type: 'image/jpg')
 
 flight2.save!
 
@@ -165,8 +165,8 @@ flight3 = Flight.new(
   techno: tech2
 )
 
-# img_url = # img address
-# file = URI.open(img_url)
-# flight.photo.attach(io: file, filename: "#{flight.name}.jpg", content_type: 'image/jpg')
+img_file = "app/assets/images/borg_cube.jpg"
+file = File.open(img_file)
+flight3.photo.attach(io: file, filename: "#{flight3.name}.jpg", content_type: 'image/jpg')
 
 flight3.save!
