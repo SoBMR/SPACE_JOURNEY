@@ -6,7 +6,7 @@
 
 <div class="houseofcards">
   <% @flights.each do |flight| %>
-    <div class="card" style="background-image: url(<%= cl_image_path flight.photo.key %>)">
+    <%# <div class="card" style="background-image: url(<%= cl_image_path flight.photo.key %>
       <div class="maincard">
         <p class="depcard"><%= flight.departure_date %></p>
         <p class="pricecard"><%= flight.price_per_person %> ₩ </p>
@@ -15,19 +15,9 @@
       </div>
     </div>
   <% end %>
-</div>
+<%# </div> %>
 
-
-
-
-
-
-
-
-
-
-<ul>
-  <% @flights.each do |flight| %>
-    <li><%= flight.name %></li>
-  <% end %>
-</ul>
+<%#
+<% @flights.each do |flight| %>
+  <%# <%= flight.travel_distance, flight.price_per_person %>
+<%# <% end %>

@@ -65,7 +65,7 @@ planetCPU2 = Planet.new(
 
 img_file = "app/assets/images/CPU_Luna.png"
 file = File.open(img_file)
-planetCPU2.photo.attach(io: file, filename: "#{planetCPU2.name}.jpg", content_type: 'image/jpg')
+planetCPU2.photo.attach(io: file, filename: "#{planetCPU2.name}.png", content_type: 'image/png')
 
 planetCPU2.save!
 
@@ -92,7 +92,7 @@ tech1 = Techno.new(
 
 img_file = "app/assets/images/borg_tech.png"
 file = File.open(img_file)
-tech1.photo.attach(io: file, filename: "#{tech1.name}.jpg", content_type: 'image/jpg')
+tech1.photo.attach(io: file, filename: "#{tech1.name}.png", content_type: 'image/png')
 
 tech1.save!
 
@@ -104,7 +104,7 @@ tech2 = Techno.new(
 
 img_file = "app/assets/images/borg_tech.png"
 file = File.open(img_file)
-tech2.photo.attach(io: file, filename: "#{tech2.name}.jpg", content_type: 'image/jpg')
+tech2.photo.attach(io: file, filename: "#{tech2.name}.png", content_type: 'image/png')
 
 tech2.save!
 
@@ -116,7 +116,7 @@ tech3 = Techno.new(
 
 img_file = "app/assets/images/borg_tech.png"
 file = File.open(img_file)
-tech3.photo.attach(io: file, filename: "#{tech3.name}.jpg", content_type: 'image/jpg')
+tech3.photo.attach(io: file, filename: "#{tech3.name}.png", content_type: 'image/png')
 
 tech3.save!
 
