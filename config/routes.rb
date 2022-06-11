@@ -10,5 +10,8 @@ Rails.application.routes.draw do
 
   resources :technos, only: [ :index, :show ]
 
+  resources :bookings, only: :create
+  post "bookings", to: "bookings#create"
+  
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end
