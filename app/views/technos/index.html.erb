@@ -1,0 +1,21 @@
+<div id="technos-index">
+
+  <div class="container">
+
+    <h1>TECHNOLOGIES</h1>
+
+    <div class="technocards">
+      <% @technos.each do |techno| %>
+        <div class="card">
+          <div class="maincard">
+            <p class="technamecard"><%= techno.name %></p>
+            <p class="techdescripcard"><%= techno.description %></p>
+            <%= link_to "Show me dat techno!", techno_path(techno), class: "btn" %>
+          </div>
+        </div>
+      <% end %>
+    </div>
+
+  </div>
+
+</div>

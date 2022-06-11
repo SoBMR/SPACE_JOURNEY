@@ -1,0 +1,16 @@
+<div id="technos-index">
+  <div class="container">
+    <h1>TECHNOLOGIES</h1>
+
+      <div class="technocards">
+
+        <div class="d-flex justify-content-between w-100 mb-3">
+          <% if @techno.photo.attached? %>
+            <%= cl_image_tag @techno.photo.key, height: 300, width: 400, crop: :fill, class:"technopic"%>
+          <% end %>
+        </div>
+
+      </div>
+
+  </div>
+</div>

@@ -1,5 +1,16 @@
-<div class="d-flex justify-content-between w-100 mb-3">
-  <% if @planet.photo.attached? %>
-    <%= cl_image_tag @planet.photo.key, height: 300, width: 400, crop: :fill, class:"planetpic"%>
-  <% end %>
+<div id="planets-index">
+  <div class="container">
+    <h1>DESTINATIONS</h1>
+
+      <div class="planetcards">
+
+        <div class="d-flex justify-content-between w-100 mb-3">
+          <% if @planet.photo.attached? %>
+            <%= cl_image_tag @planet.photo.key, height: 300, width: 400, crop: :fill, class:"planetpic"%>
+          <% end %>
+        </div>
+
+      </div>
+      
+  </div>
 </div>
