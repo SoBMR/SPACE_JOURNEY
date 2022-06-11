@@ -5,6 +5,7 @@ class TechnosController < ApplicationController
   end
 
   def show
+    @techno = Techno.find(params[:id])
   end
 
 end
