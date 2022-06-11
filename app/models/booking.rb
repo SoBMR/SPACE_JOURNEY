@@ -1,5 +1,5 @@
 class Booking < ApplicationRecord
   belongs_to :user
-  belongs_to :flight, class_name: "Flights"
+  belongs_to :flight
 
 end

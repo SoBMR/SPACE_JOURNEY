@@ -5,7 +5,7 @@
     <h1 class="booktitle">BOOKINGS</h1>
 
     <div class="book">
-      <% @bookings.order(created_at: :desc).each do |booking|%>
+      <% @bookings.each do |booking|%>
         <div class="d-flex justify-content-between w-100 mb-3">
           <% if booking.flight.photo.attached? %>
             <%= cl_image_tag booking.flight.photo.key, height: 300, width: 400, crop: :fill, class:"flightpic" %>
@@ -17,11 +17,11 @@
             </h2>
 
             <div class="date">
-              <th>Booked: <strong><%= booking.departure_date %></th></strong>
+              <th>Booked: <strong><%= booking.flight.departure_date %></th></strong>
             </div>
 
             <div class="cost">
-              Total price: <strong><%= ((booking.departure_date) * booking.flight.price).round %> ₩</strong>
+              Total price: <strong><%= booking.flight.price_per_person %> ₩</strong>
             </div>
           </div>
 

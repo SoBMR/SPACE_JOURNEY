@@ -1,24 +1,23 @@
 class BookingsController < ApplicationController
 
+  # def new
+  #   @flight = Flight.find(params[:flight_id])
+  #   @booking = Booking.new
+  # end
+
   def create
-    @booking = Booking.new(booking_params)
+    @booking = Booking.new
     @booking.flight = Flight.find(params[:flight_id])
     @booking.user = current_user
     @booking.save
-    redirect_to(user_bookings_path)
+    redirect_to(bookings_path)
   end
 
-  def user_bookings
-    @bookings = current_user.bookings
-    @previous_bookings = current_user.bookings.select do |booking|
-      booking.departure_date < DateTime.now
+  def index
+    @bookings = current_user.bookings.order(created_at: :desc)
+    @previous_bookings = @bookings.select do |booking|
+      booking.flight.departure_date < DateTime.now
     end
-  end
-
-  private
-
-  def booking_params
-    params.require(:booking).permit(:start_date)
   end
 
 end

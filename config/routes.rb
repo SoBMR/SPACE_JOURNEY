@@ -6,12 +6,13 @@ Rails.application.routes.draw do
   get 'about',           to: 'pages#about',      as: :about
   get 'contact',         to: 'pages#contact',    as: :contact
 
-  resources :flights, only: [ :index, :show ]
+  resources :flights, only: [ :index, :show ] do
+    resources :bookings, only: [ :create ]
+  end
+
+  resources :bookings, only: [ :index ]
 
   resources :technos, only: [ :index, :show ]
 
-  resources :bookings, only: :create
-  post "bookings", to: "bookings#create"
-  
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end

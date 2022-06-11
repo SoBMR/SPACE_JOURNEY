@@ -1,4 +1,10 @@
 #planets-index {
   background-image: asset-url('galaxy_wp.jpg');
   background-size: cover;
+  @media(max-width: 1024px) {
+    img.bg {
+      left: 50%;
+      margin-left: -512px;
+    }
+  }
 }
