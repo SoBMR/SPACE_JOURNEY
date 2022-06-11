@@ -1,17 +1,6 @@
-<%# <div class="d-flex justify-content-between w-100 mb-3">
-  <% if @flights.photo.attached? %>
-    <%# <%= cl_image_tag @flight.photo.key, height: 300, width: 400, crop: :fill, class:"flightpic" %>
-  <%# <% end %>
-<%# </div> %>
+<div class="d-flex justify-content-between w-100 mb-3">
+  <% if @flight.photo.attached? %>
+    <%= cl_image_tag @flight.photo.key, height: 300, width: 400, crop: :fill, class:"flightpic"%>
+  <% end %>
+</div>
 
-
-
-
-
-
-
-
-
-
-<%# <h2><%= @flight.name %>
-<%# </h2> %>

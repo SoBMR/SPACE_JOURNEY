@@ -1,0 +1,5 @@
+<div class="d-flex justify-content-between w-100 mb-3">
+  <% if @planet.photo.attached? %>
+    <%= cl_image_tag @planet.photo.key, height: 300, width: 400, crop: :fill, class:"planetpic"%>
+  <% end %>
+</div>

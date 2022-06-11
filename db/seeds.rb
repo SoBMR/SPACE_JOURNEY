@@ -135,7 +135,7 @@ flight1 = Flight.new(
 
 img_file = "app/assets/images/borg_cube.jpg"
 file = File.open(img_file)
-flight1.photo.attach(io: file, filename: "#{flight1.name}.jpg", content_type: 'image/jpg')
+flight1.photo.attach(io: file, filename: "#{flight1.departure_planet} - 1.jpg", content_type: 'image/jpg')
 
 flight1.save!
 
@@ -151,7 +151,7 @@ flight2 = Flight.new(
 
 img_file = "app/assets/images/borg_cube.jpg"
 file = File.open(img_file)
-flight2.photo.attach(io: file, filename: "#{flight2.name}.jpg", content_type: 'image/jpg')
+flight2.photo.attach(io: file, filename: "#{flight1.departure_planet} - 2.jpg", content_type: 'image/jpg')
 
 flight2.save!
 
@@ -167,6 +167,6 @@ flight3 = Flight.new(
 
 img_file = "app/assets/images/borg_cube.jpg"
 file = File.open(img_file)
-flight3.photo.attach(io: file, filename: "#{flight3.name}.jpg", content_type: 'image/jpg')
+flight3.photo.attach(io: file, filename: "#{flight1.departure_planet} - 3.jpg", content_type: 'image/jpg')
 
 flight3.save!

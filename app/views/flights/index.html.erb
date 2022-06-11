@@ -1,21 +1,25 @@
-<div class="container">
+<div id="flights-index">
 
-<h1>FLIGHTS</h1>
+  <div class="container">
+
+    <h1>FLIGHTS</h1>
+
+    <div class="flightcards">
+      <% @flights.each do |flight| %>
+        <div class="card">
+          <div class="maincard">
+            <p class="depcard"><%= flight.departure_date %></p>
+            <p class="pricecard"><%= flight.price_per_person %> ₩ </p>
+            <p class="tracard"><%= flight.travel_distance %></p>
+            <%= link_to "Check your flight", flight_path(flight), class: "btn" %>
+          </div>
+        </div>
+      <% end %>
+    </div>
+
+  </div>
 
 </div>
-
-<div class="houseofcards">
-  <% @flights.each do |flight| %>
-    <%# <div class="card" style="background-image: url(<%= cl_image_path flight.photo.key %>
-      <div class="maincard">
-        <p class="depcard"><%= flight.departure_date %></p>
-        <p class="pricecard"><%= flight.price_per_person %> ₩ </p>
-        <p class="tracard"><%= flight.travel_distance %></p>
-        <%= link_to "Check your flight", flight_path(flight), class: "btn" %>
-      </div>
-    </div>
-  <% end %>
-<%# </div> %>
 
 <%#
 <% @flights.each do |flight| %>
