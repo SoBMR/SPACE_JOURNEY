@@ -1,2 +1,22 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+    <%# <div class="banner" style="background-image: url('galaxy_wp.jpg'); background-size: cover;"> %>
+      <div class="container">
+        <h1 style="font-size: 48px;">
+          SPACE JOURNEY
+        </h1>
+        <h3 style="color: white;">Pellentesque sed dui ut augue blandit sodales. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aliquam nibh. Mauris ac mauris sed pede pellentesque fermentum.</h3>
+      </div>
+    </div>
+
+  <div class="card-behavior">
+    <% @flights.each do |flight| %>
+      <div class="card" style="background-image: url(<%= cl_image_path(flight.photo.key) %>);">
+
+        <%= link_to "Choose your flight", flight_path(flight), class: "btn" %>
+
+      </div>
+    <% end %>
+  </div>
+
+<div class="text-center">
+  <a href="./flights" class="button-flights">See all flights</a>
+</div>

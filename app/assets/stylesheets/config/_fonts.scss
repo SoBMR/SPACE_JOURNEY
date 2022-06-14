@@ -1,5 +1,6 @@
 // Import Google fonts
 @import url('https://fonts.googleapis.com/css?family=Nunito:400,700|Work+Sans:400,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kodchasan:wght@200&display=swap');
 
 // Define fonts for body and headers
 $body-font: "Work Sans", "Helvetica", "sans-serif";
@@ -12,6 +13,6 @@ $headers-font: "Nunito", "Helvetica", "sans-serif";
   src: font-url('Azonix.eot?#iefix') format('embedded-opentype'),
        font-url('Azonix.woff') format('woff'),
        font-url('Azonix.ttf') format('truetype'),
-       font-url('Azonix.otf') format('otf')
+       font-url('Azonix.otf') format('opentype')
 }
 $my-font: "Azonix";

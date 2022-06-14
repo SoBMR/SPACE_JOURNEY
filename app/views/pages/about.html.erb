@@ -1,18 +1,22 @@
-<div class="container">
-  <h1 class="about-us">ABOUT US</h1>
+<div id="about-index">
 
-  <div class="about-pic d-flex justify-content-between w-100 mb-3" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),
-      url('<%= image_path "galaxy_wp.jpg" %>');
-      color: white; height:300px">
-  </div>
+  <div class="container">
+    <h1 class="about-us">ABOUT US</h1>
 
-  <div class="about-center ps-3">
-    <div class="about-text">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi.
+    <div class="about-pic d-flex justify-content-between w-100 mb-3" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),
+        url('<%= image_path "galaxy_wp.jpg" %>');
+        color: white; height:300px">
     </div>
+
+    <div class="about-center ps-3">
+      <div class="about-text">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi.
+      </div>
+    </div>
+
   </div>
+
+
+  <%= link_to "Who are we?", contact_path %>
 
 </div>
-
-
-<%= link_to "Who are we?", contact_path %>
