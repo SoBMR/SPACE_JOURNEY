@@ -1,10 +1,8 @@
-#technos-index {
-  background-image: asset-url('technologies.jpg');
+#bookings-index {
+  background-image: asset-url('bookings.jpg');
   background-size: 100% -1%;
   height: 725px;
   font-family: 'Kodchasan', sans-serif;
-
-
 
   @media(max-width: 1024px) {
     img.bg {

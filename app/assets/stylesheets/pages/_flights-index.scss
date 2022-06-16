@@ -1,6 +1,7 @@
 #flights-index {
-  background-image: asset-url('galaxy_wp.jpg');
-  background-size: cover;
+  background-image: asset-url('flights.jpg');
+  background-size: 100% -1%;
+  height: 725px;
   font-family: 'Kodchasan', sans-serif;
 
   @media(max-width: 1024px) {
