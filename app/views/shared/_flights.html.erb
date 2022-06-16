@@ -5,8 +5,9 @@
         <p class="depcard"><%= flight.departure_date %></p>
         <p class="pricecard"><%= flight.price_per_person %> ₩ </p>
         <p class="tracard"><%= flight.travel_distance %></p>
-        <%= link_to "Check your flight", flight_path(flight), class: "btn" %>
+
       </div>
+      <%= link_to "Check your flight", flight_path(flight), class: "btn" %>
     </div>
   <% end %>
 </div>

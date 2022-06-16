@@ -1,5 +1,6 @@
-#button-flights {
-  background-color: blue;
+.btn {
+  color: blue;
+  background-color: lightblue;
   border: none;
   color: white;
   padding: 15px 32px;
@@ -7,6 +8,7 @@
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
+  font-weight: 600;
   border-radius: 8px;
   border: 2px solid darkslateblue;
 }

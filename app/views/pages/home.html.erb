@@ -9,11 +9,11 @@
 
   <div class="card-behavior">
     <% @flights.each do |flight| %>
-      <div class="card" style="background-image: url(<%= cl_image_path(flight.photo.key) %>);">
+      <%# <div class="card" style="background-image: url(<%= cl_image_path(flight.photo.key) %>
 
-        <%= link_to "Choose your flight", flight_path(flight), class: "btn" %>
+        <%# <%= link_to "Choose your flight", flight_path(flight), class: "btn" %>
 
-      </div>
+      <%# </div> %>
     <% end %>
   </div>
 
