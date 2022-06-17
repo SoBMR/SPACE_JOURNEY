@@ -3,9 +3,12 @@
   <div class="container">
 
     <h1 class="booktitle">SPACE JOURNEY</h1>
-      <h3 style="color: white;">Pellentesque sed dui ut augue blandit sodales. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aliquam nibh. Mauris ac mauris sed pede pellentesque fermentum.</h3>
+
+      <h2 style="color: white;">Earth was only the beginning</h2>
+      <%# <h3 style="color: white;">Pellentesque sed dui ut augue blandit sodales. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aliquam nibh. Mauris ac mauris sed pede pellentesque fermentum.</h3> %>
 
   </div>
+
 
   <div class="card-behavior">
     <% @flights.each do |flight| %>
@@ -17,8 +20,22 @@
     <% end %>
   </div>
 
-  <div class="text-center">
-    <a href="./flights" class="button-flights">See all flights</a>
+  <div class="flight-container">
+    <div class="text-left">
+      <a href="./flights" class="button-flights">See all flights</a>
+    </div>
+  </div>
+
+  <div class="techno-container">
+    <div class="text-center">
+      <a href="./technos" class="button-technos">See all technos</a>
+    </div>
+  </div>
+
+  <div class="planet-container">
+    <div class="text-center">
+      <a href="./planets" class="button-planets">See all destinations</a>
+    </div>
   </div>
 
 </div>
