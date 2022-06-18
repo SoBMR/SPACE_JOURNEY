@@ -1,6 +1,8 @@
 .button-flights {
   color: blue;
-  background-color: lightblue;
+  background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
+  box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+  box-sizing: border-box;
   border: none;
   color: white;
   padding: 15px 32px;
@@ -13,11 +15,39 @@
   border: 2px solid darkslateblue;
   font-family: 'Kodchasan', sans-serif;
   margin-bottom: 24px;
+
+  .button-flights:active,
+  .button-flights:hover {
+    outline: 0;
+  }
+
+  .button-flights span {
+    background-color: rgb(5, 6, 45);
+    padding: 16px 24px;
+    border-radius: 6px;
+    width: 100%;
+    height: 100%;
+    transition: 300ms;
+  }
+
+  .button-flights:hover span {
+    background: none;
+  }
+
+  @media (min-width: 768px) {
+    .button-flights {
+      font-size: 24px;
+      min-width: 196px;
+    }
+  }
 }
 
+
 .button-technos {
-  color: green;
-  background-color: lightgreen;
+  color: rgb(65, 195, 100);
+  background-image: linear-gradient(144deg,#0fa24f, #42f342 50%,#00eb8d);
+  box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+  box-sizing: border-box;
   border: none;
   color: white;
   padding: 15px 32px;
@@ -27,13 +57,41 @@
   font-size: 16px;
   font-weight: 600;
   border-radius: 4px;
-  border: 2px solid teal;
+  border: 2px solid rgb(61, 139, 87);
   font-family: 'Kodchasan', sans-serif;
+  margin-bottom: 24px;
+
+  .button-flights:active,
+  .button-flights:hover {
+    outline: 0;
+  }
+
+  .button-flights span {
+    background-color: rgb(5, 6, 45);
+    padding: 16px 24px;
+    border-radius: 6px;
+    width: 100%;
+    height: 100%;
+    transition: 300ms;
+  }
+
+  .button-flights:hover span {
+    background: none;
+  }
+
+  @media (min-width: 768px) {
+    .button-flights {
+      font-size: 24px;
+      min-width: 196px;
+    }
+  }
 }
 
 .button-planets {
-  color: purple;
-  background-color: mediumpurple;
+  color: rgb(170, 0, 255);
+  background-image: linear-gradient(144deg,#9c40ff, #bb42f3 50%,#e300eb);
+  box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+  box-sizing: border-box;
   border: none;
   color: white;
   padding: 15px 32px;
@@ -43,8 +101,34 @@
   font-size: 16px;
   font-weight: 600;
   border-radius: 4px;
-  border: 2px solid darkviolet;
+  border: 2px solid darkslateblue;
   font-family: 'Kodchasan', sans-serif;
+  margin-bottom: 24px;
+
+  .button-flights:active,
+  .button-flights:hover {
+    outline: 0;
+  }
+
+  .button-flights span {
+    background-color: rgb(5, 6, 45);
+    padding: 16px 24px;
+    border-radius: 6px;
+    width: 100%;
+    height: 100%;
+    transition: 300ms;
+  }
+
+  .button-flights:hover span {
+    background: none;
+  }
+
+  @media (min-width: 768px) {
+    .button-flights {
+      font-size: 24px;
+      min-width: 196px;
+    }
+  }
 }
 
 .btn {
