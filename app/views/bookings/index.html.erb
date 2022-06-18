@@ -4,9 +4,9 @@
 
     <h1 class="booktitle">BOOKINGS</h1>
 
-    <div class="book">
+    <div class="book py-5">
       <% @bookings.each do |booking|%>
-        <div class="d-flex justify-content-between w-100 mb-3">
+        <div class="d-flex justify-content-between w-100 mb-5">
           <% if booking.flight.photo.attached? %>
             <%= cl_image_tag booking.flight.photo.key, height: 300, width: 400, crop: :fill, class:"flightpic" %>
           <% end %>

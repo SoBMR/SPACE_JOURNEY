@@ -125,7 +125,7 @@ tech3.save!
 
 # F1
 flight1 = Flight.new(
-  departure_date: DateTime.now + 3.days,
+  departure_date: DateTime.now + 350.years,
   price_per_person: 50_000,
   travel_distance: 150_000_000,
   departure_planet: planetCPU2,
@@ -141,7 +141,7 @@ flight1.save!
 
 # F2
 flight2 = Flight.new(
-  departure_date: DateTime.now + 3.days,
+  departure_date: DateTime.now + 350.years,
   price_per_person: 50_000,
   travel_distance: 150_000_000,
   departure_planet: planetCPU1,
@@ -157,7 +157,7 @@ flight2.save!
 
 # F3
 flight3 = Flight.new(
-  departure_date: DateTime.now + 3.days,
+  departure_date: DateTime.now + 350.years,
   price_per_person: 50_000,
   travel_distance: 150_000_000,
   departure_planet: planet3,

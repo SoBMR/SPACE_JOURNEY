@@ -9,3 +9,35 @@
   background: #F4F4F4;
   grid-row-gap: 40px;
 }
+
+.maincard {
+  background-color: rgb(180, 115, 250);
+  border: 2px solid darkviolet;
+}
+
+.depcard {
+  text-align: end;
+}
+
+.pricecard {
+  text-align: end;
+}
+
+.tracard {
+  text-align: end;
+}
+
+.flightdepdate {
+  font-family: 'Kodchasan', sans-serif;
+  color: beige;
+}
+
+.date {
+  font-family: 'Kodchasan', sans-serif;
+  color: beige;
+}
+
+.cost {
+  font-family: 'Kodchasan', sans-serif;
+  color: beige;
+}

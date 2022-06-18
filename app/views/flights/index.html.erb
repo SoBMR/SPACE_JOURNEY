@@ -1,10 +1,42 @@
 <div id="flights-index">
 
+
   <div class="container">
 
     <h1>FLIGHTS</h1>
 
-    <%= render "/shared/flights" %>
+
+
+    <div class="flicard-container">
+      <div class="text-left">
+        <a href="./flights" class="button-flights">Choose your flight</a>
+      </div>
+    </div>
+
+    <div class="book py-5">
+      <% @flights.each do |flight|%>
+        <div class="d-flex justify-content-between w-100 mb-5">
+          <% if flight.photo.attached? %>
+            <%= cl_image_tag flight.photo.key, height: 300, width: 400, crop: :fill, class:"flightpic" %>
+          <% end %>
+
+          <div class="text-end ps-5">
+            <h2 class="flightdepdate">
+              <%= flight.departure_date %>
+            </h2>
+
+            <div class="date">
+              <th>Booked: <strong><%= flight.departure_date %></th></strong>
+            </div>
+
+            <div class="cost">
+              Total price: <strong><%= flight.price_per_person %> ₩</strong>
+            </div>
+          </div>
+
+        </div>
+      <% end %>
+    </div>
 
   </div>
 
