@@ -4,17 +4,44 @@
 
     <h1>DESTINATIONS</h1>
 
-    <div class="planetcards">
-      <% @planets.each do |planet| %>
-        <div class="card">
-          <div class="maincard">
-            <p class="namecard"><%= planet.name %></p>
-            <p class="descripcard"><%= planet.description %></p>
-            <%= link_to "Show me dat planet!", planet_path(planet), class: "btn" %>
+    <div class="planetcard-container">
+      <div class="text-left">
+        <%# <a href="./technos" class="button-technos">Choose your technology</a> %>
+      </div>
+    </div>
+
+    <div class="book py-5">
+      <% @planets.each do |planet|%>
+        <div class="d-flex justify-content-between w-100 mb-5">
+          <% if planet.photo.attached? %>
+            <a href="./planets" class="planetpic"><%= cl_image_tag planet.photo.key, height: 300, width: 400, crop: :fill, class:"planetpic" %></a>
+          <% end %>
+
+          <div class="text-end ps-5">
+            <h2 class="namecard">
+              <%= planet.name %>
+            </h2>
+
+            <div class="descripcard">
+              <strong><%= planet.description %></strong>
+            </div>
           </div>
+
         </div>
       <% end %>
     </div>
+
+    <%# <div class="planetcards"> %>
+      <%# <% @planets.each do |planet| %>
+        <%# <div class="card"> %>
+          <%# <div class="maincard"> %>
+            <%# <p class="namecard"><%= planet.name %>
+            <%# <p class="descripcard"><%= planet.description %>
+            <%# <%= link_to "Show me dat planet!", planet_path(planet), class: "btn" %>
+          <%# </div> %>
+        <%# </div> %>
+      <%# <% end %>
+    <%# </div> %>
   </div>
 
 </div>

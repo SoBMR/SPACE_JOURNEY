@@ -4,17 +4,44 @@
 
     <h1>TECHNOLOGIES</h1>
 
-    <div class="technocards">
-      <% @technos.each do |techno| %>
-        <div class="card">
-          <div class="maincard">
-            <p class="technamecard"><%= techno.name %></p>
-            <p class="techdescripcard"><%= techno.description %></p>
-            <%= link_to "Show me dat techno!", techno_path(techno), class: "btn" %>
+    <div class="techcard-container">
+      <div class="text-left">
+        <%# <a href="./technos" class="button-technos">Choose your technology</a> %>
+      </div>
+    </div>
+
+    <div class="book py-5">
+      <% @technos.each do |techno|%>
+        <div class="d-flex justify-content-between w-100 mb-5">
+          <% if techno.photo.attached? %>
+            <a href="./technos" class="technopic"><%= cl_image_tag techno.photo.key, height: 300, width: 400, crop: :fill, class:"technopic" %></a>
+          <% end %>
+
+          <div class="text-end ps-5">
+            <h2 class="technamecard">
+              <%= techno.name %>
+            </h2>
+
+            <div class="techdescripcard">
+              <strong><%= techno.description %></strong>
+            </div>
           </div>
+
         </div>
       <% end %>
     </div>
+
+    <%# <div class="technocards"> %>
+      <%# <% @technos.each do |techno| %>
+        <%# <div class="card"> %>
+          <%# <div class="maincard"> %>
+            <%# <p class="technamecard"><%= techno.name %>
+            <%# <p class="techdescripcard"><%= techno.description %>
+            <%# <%= link_to "Show me dat techno!", techno_path(techno), class: "btn" %>
+          <%# </div> %>
+        <%# </div> %>
+      <%# <% end %>
+    <%# </div> %>
 
   </div>
 
