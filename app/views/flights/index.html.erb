@@ -7,7 +7,7 @@
 
     <div class="flicard-container">
       <div class="text-left">
-        <a href="./flights" class="button-flights">Choose your flight</a>
+        <%# <a href="./flights" class="button-flights">Choose your flight</a> %>
       </div>
     </div>
 
@@ -15,7 +15,7 @@
       <% @flights.each do |flight|%>
         <div class="d-flex justify-content-between w-100 mb-5">
           <% if flight.photo.attached? %>
-            <%= cl_image_tag flight.photo.key, height: 300, width: 400, crop: :fill, class:"flightpic" %>
+            <a href="./flights" class="flightpic"><%= cl_image_tag flight.photo.key, height: 300, width: 400, crop: :fill, class:"flightpic" %></a>
           <% end %>
 
           <div class="text-end ps-5">

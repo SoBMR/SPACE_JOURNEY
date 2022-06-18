@@ -1,3 +1,5 @@
+# require 'open-uri'
+
 Booking.destroy_all
 Flight.destroy_all
 Techno.destroy_all
@@ -5,6 +7,22 @@ Planet.destroy_all
 User.destroy_all
 
 User.create!(email: "test@test.com", password: "azerty")
+
+# API #########
+
+# bodies_url = "https://api.le-systeme-solaire.net/rest/bodies/"
+# api_bodies_data = JSON.parse(URI.open(bodies_url).read)
+# bodies_array = api_bodies_data['bodies']
+
+# logger les 5 premiers noms
+# bodies_array.first(5).each do |body|
+  # body est un hash
+#   puts body['name']
+# end
+
+# bodies_array.select { |e| e['isPlanet'] }
+
+# API #########
 
 
 ##### PLANETS #####
