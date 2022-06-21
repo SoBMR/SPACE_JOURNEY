@@ -33,7 +33,7 @@ planet1 = Planet.new(
   description: "Praesent aliquam, enim at fermentum mollis, ligula massa adipiscing nisl, ac euismod nibh nisl eu lectus. Fusce vulputate sem at sapien. Vivamus leo."
 )
 
-img_file = "app/assets/images/borg_planet.png"
+img_file = "app/assets/images/ProximaCentauri-B.jpg"
 file = File.open(img_file)
 planet1.photo.attach(io: file, filename: "#{planet1.name}.jpg", content_type: 'image/jpg')
 
@@ -45,7 +45,7 @@ planet2 = Planet.new(
   description: "Praesent aliquam, enim at fermentum mollis, ligula massa adipiscing nisl, ac euismod nibh nisl eu lectus. Fusce vulputate sem at sapien. Vivamus leo."
 )
 
-img_file = "app/assets/images/borg_planet.png"
+img_file = "app/assets/images/Kepler22-B.jpg"
 file = File.open(img_file)
 planet2.photo.attach(io: file, filename: "#{planet2.name}.jpg", content_type: 'image/jpg')
 
@@ -57,7 +57,7 @@ planet3 = Planet.new(
   description: "Praesent aliquam, enim at fermentum mollis, ligula massa adipiscing nisl, ac euismod nibh nisl eu lectus. Fusce vulputate sem at sapien. Vivamus leo."
 )
 
-img_file = "app/assets/images/borg_planet.png"
+img_file = "app/assets/images/Gliese667Cc.jpg"
 file = File.open(img_file)
 planet3.photo.attach(io: file, filename: "#{planet3.name}.jpg", content_type: 'image/jpg')
 

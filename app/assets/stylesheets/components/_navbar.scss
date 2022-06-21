@@ -1,6 +1,6 @@
 .navbar-lewagon {
   justify-content: space-between;
-  background: white;
+  // background: none;
 }
 
 .navbar-lewagon .navbar-collapse {
@@ -10,3 +10,10 @@
 .navbar-lewagon .navbar-brand img {
   width: 40px;
 }
+
+.navbar-lewagon .container-fluid {
+  justify-content: center;
+  background: transparent;
+  font-family: 'Kodchasan', sans-serif;
+}
+// css transparent, texte en blanc, fond soit derrière navbar (ou navbar par-dessus)
