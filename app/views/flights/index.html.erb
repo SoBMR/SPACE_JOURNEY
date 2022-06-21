@@ -19,18 +19,18 @@
           <% end %>
 
           <div class="text-end ps-5">
-            <h2 class="flightdepdate">
-              <%= flight.departure_date %>
-            </h2>
+            <h2 class="flightdepdate">TITRE</h2>
 
             <div class="date">
-              <th>Booked: <strong><%= flight.departure_date %></th></strong>
+              <th>Date: <strong><%= flight.departure_date %></th></strong>
             </div>
 
             <div class="cost">
               Total price: <strong><%= flight.price_per_person %> ₩</strong>
             </div>
           </div>
+
+        <%= button_to "Book your flight", flight_bookings_path(flight) %>
 
         </div>
       <% end %>
