@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_06_09_172937) do
+ActiveRecord::Schema.define(version: 2022_06_23_170701) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -61,6 +61,7 @@ ActiveRecord::Schema.define(version: 2022_06_09_172937) do
     t.bigint "techno_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.integer "flight_duration"
     t.index ["arrival_planet_id"], name: "index_flights_on_arrival_planet_id"
     t.index ["departure_planet_id"], name: "index_flights_on_departure_planet_id"
     t.index ["techno_id"], name: "index_flights_on_techno_id"
