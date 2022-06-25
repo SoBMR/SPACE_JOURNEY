@@ -152,7 +152,7 @@ flight1 = Flight.new(
   techno: tech3
 )
 
-img_file = "app/assets/images/spaceship-tech.jpg"
+img_file = "app/assets/images/ship2.jpg"
 file = File.open(img_file)
 flight1.photo.attach(io: file, filename: "#{flight1.departure_planet} - 1.jpg", content_type: 'image/jpg')
 
@@ -169,7 +169,7 @@ flight2 = Flight.new(
   techno: tech1
 )
 
-img_file = "app/assets/images/spaceship-tech2.jpg"
+img_file = "app/assets/images/ship3.jpg"
 file = File.open(img_file)
 flight2.photo.attach(io: file, filename: "#{flight1.departure_planet} - 2.jpg", content_type: 'image/jpg')
 
@@ -186,8 +186,8 @@ flight3 = Flight.new(
   techno: tech2
 )
 
-img_file = "app/assets/images/spaceship-techLocutus.jpg"
+img_file = "app/assets/images/ship1.png"
 file = File.open(img_file)
-flight3.photo.attach(io: file, filename: "#{flight1.departure_planet} - 3.jpg", content_type: 'image/jpg')
+flight3.photo.attach(io: file, filename: "#{flight1.departure_planet} - 3.png", content_type: 'image/png')
 
 flight3.save!

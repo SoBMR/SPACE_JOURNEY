@@ -5,6 +5,7 @@
   background-size: 100% 100%;
   background-size: cover;
   font-family: 'Kodchasan', sans-serif;
+  min-height: 100vh;
 
   @media(max-width: 1024px) {
     img.bg {
@@ -36,4 +37,12 @@ h2.namecard {
 
 .planetbox {
   margin-right: 75px;
+}
+
+.descriplanets {
+  font-family: 'Kodchasan', sans-serif;
+  font-size: 18px;
+  color: beige;
+  text-align: end;
+  display: inline-block;
 }
