@@ -31,6 +31,12 @@ h2.namecard {
   color: beige;
 }
 
+.planetcards {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .descripcard {
   color: beige;
 }
@@ -43,6 +49,7 @@ h2.namecard {
   font-family: 'Kodchasan', sans-serif;
   font-size: 18px;
   color: beige;
-  text-align: end;
+  text-align: right;
   display: inline-block;
+  margin-right: 75px;
 }
