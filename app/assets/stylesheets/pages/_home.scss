@@ -5,7 +5,7 @@
   padding-top: 3rem;
   background-image: asset-url('homepage.jpg');
   background-size: 100% -1%;
-  height: 725px;
+  background-size: inherit;
 }
 
 .hometitle {
@@ -34,13 +34,6 @@ h1 {
 
 h2 {
   font-family: 'Kodchasan', sans-serif;
-}
-
-.subtitle {
-  color: beige;
-  // position: absolute;
-  // top: 145px;
-  // left: -70px;
 }
 
 h3 {
@@ -180,7 +173,7 @@ i {
 
 .super-container .card .face.face2 {
   position: relative;
-  background: rgb(213, 213, 213);
+  background: url("galaxy_wp.jpg");
   display: flex;
   justify-content: center;
   align-items: center;
@@ -212,5 +205,5 @@ i {
 
 .super-container a {
   text-decoration: none;
-  color: #414141;
+  color: beige;
 }
