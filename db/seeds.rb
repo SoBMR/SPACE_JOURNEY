@@ -146,7 +146,7 @@ flight1 = Flight.new(
   departure_date: DateTime.now + 350.years,
   price_per_person: 50_000,
   travel_distance: 150_000_000,
-  flight_duration: DateTime.now + 5.years,
+  flight_duration: 355 * 365 * 24 * 60, # 355 ans x 365 j x 24 h x 60 mn = durée en mn
   departure_planet: planetCPU2,
   arrival_planet: planet2,
   techno: tech3
@@ -163,7 +163,7 @@ flight2 = Flight.new(
   departure_date: DateTime.now + 350.years,
   price_per_person: 50_000,
   travel_distance: 150_000_000,
-  flight_duration: DateTime.now + 5.years,
+  flight_duration: 5 * 365 * 24 * 60, # idem, mais 5 ans
   departure_planet: planetCPU1,
   arrival_planet: planet3,
   techno: tech1
@@ -180,7 +180,7 @@ flight3 = Flight.new(
   departure_date: DateTime.now + 350.years,
   price_per_person: 50_000,
   travel_distance: 150_000_000,
-  flight_duration: DateTime.now + 5.years,
+  flight_duration: 40,
   departure_planet: planet3,
   arrival_planet: planetCPU2,
   techno: tech2

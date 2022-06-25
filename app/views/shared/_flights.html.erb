@@ -5,6 +5,7 @@
         <p class="depcard"><strong><%= flight.departure_date %></strong></p>
         <p class="pricecard"><strong><%= flight.price_per_person %></strong> ₩ </p>
         <p class="tracard"><strong><%= flight.travel_distance %></strong></p>
+        <p class="duracard"><strong><%= flight.flight_duration %></strong></p>
 
       </div>
       <%= link_to "Check your flight", flight_path(flight), class: "btn" %>

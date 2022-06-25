@@ -22,11 +22,12 @@
             <h2 class="flightdepdate">TITRE</h2>
 
             <div class="date">
-              <th>Date: <strong><%= flight.departure_date %></th></strong>
+              <th>Departure: <strong><%= flight.departure_date.strftime("%m/%d/%Y") %></th></strong>
+
             </div>
 
             <div class="date">
-              <th>Duration: <strong><%= flight.flight_duration %></th></strong>
+              <th>Duration: <strong><%= flight.flight_duration %></th> minutes</strong>
             </div>
 
             <div class="cost">
