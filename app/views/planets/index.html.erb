@@ -17,6 +17,7 @@
             <a href="./planets" class="planetpic"><%= cl_image_tag planet.photo.key, height: 300, width: 400, crop: :fill, class:"planetpic" %></a>
           <% end %>
 
+        <div class="planetbox">
           <div class="text-end ps-5">
             <h2 class="namecard">
               <%= planet.name %>
@@ -26,6 +27,7 @@
               <strong><%= planet.description %></strong>
             </div>
           </div>
+        </div>
 
         </div>
       <% end %>

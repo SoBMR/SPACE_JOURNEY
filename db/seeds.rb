@@ -152,7 +152,7 @@ flight1 = Flight.new(
   techno: tech3
 )
 
-img_file = "app/assets/images/borg_cube.jpg"
+img_file = "app/assets/images/spaceship-tech.jpg"
 file = File.open(img_file)
 flight1.photo.attach(io: file, filename: "#{flight1.departure_planet} - 1.jpg", content_type: 'image/jpg')
 
@@ -169,7 +169,7 @@ flight2 = Flight.new(
   techno: tech1
 )
 
-img_file = "app/assets/images/borg_cube.jpg"
+img_file = "app/assets/images/spaceship-tech2.jpg"
 file = File.open(img_file)
 flight2.photo.attach(io: file, filename: "#{flight1.departure_planet} - 2.jpg", content_type: 'image/jpg')
 
@@ -180,13 +180,13 @@ flight3 = Flight.new(
   departure_date: DateTime.now + 350.years,
   price_per_person: 50_000,
   travel_distance: 150_000_000,
-  flight_duration: 40,
+  flight_duration: 20,
   departure_planet: planet3,
   arrival_planet: planetCPU2,
   techno: tech2
 )
 
-img_file = "app/assets/images/borg_cube.jpg"
+img_file = "app/assets/images/spaceship-techLocutus.jpg"
 file = File.open(img_file)
 flight3.photo.attach(io: file, filename: "#{flight1.departure_planet} - 3.jpg", content_type: 'image/jpg')
 

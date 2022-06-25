@@ -17,15 +17,17 @@
             <a href="./technos" class="technopic"><%= cl_image_tag techno.photo.key, height: 300, width: 400, crop: :fill, class:"technopic" %></a>
           <% end %>
 
-          <div class="text-end ps-5">
-            <h2 class="technamecard">
-              <%= techno.name %>
-            </h2>
+          <div class="technobox">
+            <div class="text-end ps-5">
+              <h2 class="technamecard">
+                <%= techno.name %>
+              </h2>
 
-            <div class="techdescripcard">
-              <strong><%= techno.description %></strong>
-            </div>
+              <div class="techdescripcard">
+                <strong><%= techno.description %></strong>
+              </div>
           </div>
+        </div>
 
         </div>
       <% end %>
