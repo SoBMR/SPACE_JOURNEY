@@ -22,6 +22,8 @@
           <div class="text-end ps-5">
             <h2 class="flightdepdate">TITRE</h2>
 
+            <%= link_to flight.departure_planet.name, planet_path(flight.departure_planet) %>
+
             <div class="date">
               <th>Departure: <strong><%= flight.departure_date.strftime("%m/%d/%Y") %></th></strong>
 
