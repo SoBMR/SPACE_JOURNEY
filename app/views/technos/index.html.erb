@@ -24,7 +24,7 @@
               </h2>
 
               <div class="techdescripcard">
-                <strong><%= techno.description %></strong>
+                <strong><%= techno.description.gsub(/\n/, '<br/>').html_safe %></strong>
               </div>
           </div>
         </div>

@@ -24,7 +24,7 @@
             </h2>
 
             <div class="descripcard">
-              <strong><%= planet.description %></strong>
+              <strong><%= planet.description.gsub(/\n/, '<br/>').html_safe %></strong>
             </div>
           </div>
         </div>

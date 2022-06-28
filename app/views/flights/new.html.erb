@@ -1,2 +1,54 @@
-<h1>NEW FLIGHTS</h1>
+<div id="flights-index">
 
+
+  <div class="container">
+
+    <h1>CUSTOM FLIGHTS</h1>
+
+    <div class="flicard-container">
+      <div class="text-left">
+        <%# <a href="./flights" class="button-flights">Choose your flight</a> %>
+      </div>
+    </div>
+
+    <%# <div class="book py-5">
+      <% @new_flight.each do |flight|%>
+        <%# <div class="d-flex justify-content-between w-100 mb-5">
+          <% if flight.photo.attached? %>
+            <%# <a href="./flights" class="flightpic"><%= cl_image_tag flight.photo.key, height: 300, width: 400, class:"flightpic" %></a>
+          <%# <% end %>
+
+        <%# <div class="flightbox">
+          <div class="text-end ps-5">
+            <h2 class="flightdepdate">CUSTOM</h2> %>
+
+            <%# <%= link_to flight.departure_planet.name, planet_path(flight.departure_planet), class:"btn-departure-name" %>
+            <%# <%= link_to flight.techno.name, techno_path(flight.techno), class:"btn-techno-name" %>
+
+            <%# <div class="date"> %>
+              <%# <th>Departure: <strong><%= flight.departure_date.strftime("%m/%d/%Y") %>
+              <%# </th></strong> %>
+
+            <%# </div> %>
+
+            <%# <div class="date"> %>
+              <%# <th>Duration: <strong><%= flight.flight_duration %>
+              <%# </th> minutes</strong> %>
+            <%# </div> %>
+
+            <%# <div class="cost"> %>
+              <%# Total price: <strong><%= flight.price_per_person %>
+               <%# ₩</strong> %>
+            <%# </div> %>
+          <%# </div> %>
+        <%# </div> %>
+
+        <%# <%= button_to "Book your flight", flight_bookings_path(flight) %>
+
+        <%# </div> %>
+      <%# <% end %>
+    <%# </div> %>
+
+  </div>
+
+</div>
