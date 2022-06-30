@@ -171,7 +171,7 @@ tech2 = Techno.new(
   description: "Thrust: 1,000,000 N
   Specific Impulse (isp): 1,100,000 seconds
   Exhaust Velocity (ve): 11,000,000 m/second (~3.7% of light speed)
-  Mass Flow Rate (ṁ ): 0.09 kg/second
+  Mass Flow Rate (ṁ): 0.09 kg/second
   Thrust Power: 5.5 Terawatt
   Engine's Thrust to Weight Ratio: ~140 [Citation needed]
   Propellant mass fraction (yacht's mass fueled / mass empty): ~4
@@ -179,9 +179,9 @@ tech2 = Techno.new(
   Praesent aliquam, enim at fermentum mollis, ligula massa adipiscing nisl, ac euismod nibh nisl eu lectus. Fusce vulputate sem at sapien. Vivamus leo."
 )
 
-img_file = "app/assets/images/borg_tech.png"
+img_file = "app/assets/images/hyper-sleep.jpg"
 file = File.open(img_file)
-tech2.photo.attach(io: file, filename: "#{tech2.name}.png", content_type: 'image/png')
+tech2.photo.attach(io: file, filename: "#{tech2.name}.jpg", content_type: 'image/jpg')
 
 tech2.save!
 
@@ -191,7 +191,7 @@ tech3 = Techno.new(
   description: "Thrust: 1,000,000 N
   Specific Impulse (isp): 1,100,000 seconds
   Exhaust Velocity (ve): 11,000,000 m/second (~3.7% of light speed)
-  Mass Flow Rate (ṁ ): 0.09 kg/second
+  Mass Flow Rate (ṁ): 0.09 kg/second
   Thrust Power: 5.5 Terawatt
   Engine's Thrust to Weight Ratio: ~140
   Propellant mass fraction (yacht's mass fueled / mass empty): ~4"

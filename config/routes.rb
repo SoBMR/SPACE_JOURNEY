@@ -6,7 +6,7 @@ Rails.application.routes.draw do
   get 'about',           to: 'pages#about',      as: :about
   get 'contact',         to: 'pages#contact',    as: :contact
 
-  resources :flights, only: [ :index, :show, :new, :create ] do
+  resources :flights, only: [ :index, :show ] do
     resources :bookings, only: [ :create ]
   end
 
